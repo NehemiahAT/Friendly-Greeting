@@ -8,9 +8,17 @@ if(!localStorage.getItem('name')) {
   }
 helloLabel.textContent = 'Hello!';
 function setUserName() {
+    var setUserNamePrevTriggered;
+    if (setUserNamePrevTriggered = true) {
+     helloLabel.textContext = 'Hello!';   
+    }
+    remPrevTimes();
     var myName = prompt('Please enter your name.');
     localStorage.setItem('name', myName);
     helloLabel.textContent = 'Hello, ' + myName + '!';
+    function remPrevTimes() {
+     setUserNamePrevTriggered = true;    
+    }
   }
   changeUserButton.onclick = function() {
     setUserName();
