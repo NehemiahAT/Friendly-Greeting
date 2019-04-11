@@ -10,9 +10,11 @@ helloLabel.textContent = 'Hello!';
 function setUserName() {
     var myName = prompt('Please enter your name.');
     localStorage.setItem('name', myName);
-    helloLabel.textContent = 'Hello, ' + myName + '!';
+    
     if (myName === null) {
      helloLabel.textContext = 'Hello!';   
+    } else {
+      helloLabel.textContent = 'Hello, ' + myName + '!';
     }
   }
   changeUserButton.onclick = function() {
