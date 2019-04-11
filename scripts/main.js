@@ -11,7 +11,7 @@ function setUserName() {
     var myName = prompt('Please enter your name.');
     localStorage.setItem('name', myName);
     
-    if (myName === null) {
+    if (myName === null || myName === "") {
      helloLabel.textContext = 'Hello!';   
     } else {
       helloLabel.textContent = 'Hello, ' + myName + '!';
