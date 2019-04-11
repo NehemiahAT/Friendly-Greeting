@@ -1,12 +1,13 @@
 h1 {
-font-family: signika, dense, mohave, stellar, hk grotesk, quanelas, cloud, modernist;
+font-family: signika, dense, mohave, stellar, hk grotesk, quanelas, cloud, modernist, sans-serif;
 color: #ff0000;
 }
 
 button {
+ font-family: signika, dense, mohave, stellar, hk grotesk, quanelas, cloud, modernist, sans-serif;
  background-color: #99cc33;
  border: none;
- color: white;
+ color: #ffffff;
  padding: 15px 32px;
  text-align: center;
  text-decoration: none;
