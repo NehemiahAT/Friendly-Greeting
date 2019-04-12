@@ -3,7 +3,7 @@ setName();
 };
 
 function setName() {
-    var promt = prompt("Please enter your name below:", "John");
+    var promt = prompt("Please enter your name below:");
     if (promt === null || promt === "") {
       document.getElementById("HelloH").innerText = "Hello!";
     } else {
