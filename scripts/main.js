@@ -3,7 +3,8 @@ document.getElementById("btn1").onclick = function() {
 };
 
 function setName() {
-var promt = prompt("Please enter your name below:");
+    var prompt = prompt("Please enter your name below:");
+    document.getElementById("helloH").textContext = "Hello, " + promt + "!";
+
 }
 
-document.getElementById("helloH").textContext = "Hello, " + promt + "!";
