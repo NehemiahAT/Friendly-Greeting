@@ -1,5 +1,4 @@
 var helloLabel = document.querySelector('h1');
-var changeUserButton = document.querySelector('button');
 
 helloLabel.textContent = 'Hello!';
 function setUserName() {
@@ -11,6 +10,6 @@ function setUserName() {
       helloLabel.textContent = 'Hello, ' + myName + '!';
     }
   }
-  changeUserButton.onclick = function() {
+  document.getElementById("btn1").onclick = function() {
     setUserName();
    }
