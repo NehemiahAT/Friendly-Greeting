@@ -1,15 +1,9 @@
-var helloLabel = document.querySelector('h1');
+document.getElementById("btn1").onclick = function() {
+    setName();
+};
 
-helloLabel.textContent = 'Hello!';
-function setUserName() {
-    var myName = prompt('Please enter your name.');
-    
-    if (myName === null || myName === '') {
-     helloLabel.textContext = 'Hello!';   
-    } else {
-      helloLabel.textContent = 'Hello, ' + myName + '!';
-    }
-  }
-  document.getElementById("btn1").onclick = function() {
-    setUserName();
-   }
+function setName() {
+var promt = prompt("Please enter your name below:");
+}
+
+document.getElementById("helloH").textContext = "Hello, " + promt + "!";
