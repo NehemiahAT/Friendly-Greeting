@@ -16,26 +16,6 @@ function setName() {
      console.error("ErrorAlertSwitchOne");
      ErrorAlertSwitchNumberOne = true;
     }
-  if (promt === null || promt === "") {
-  checkOne = true; 
-  }
-  if (checkOne === true && ErrorAlertSwitchNumberOne === null) {
-      document.getElementById("HelloH").innerText = "Hello!";
-    } else if (checkOne === true && ErrorAlertSwitchNumberOne === null) {
-    document.getElementById("HelloH").innerText = "Hello, " + promt + "!";
-    document.title = "Hello, " + promt + "!";
-  }
-    else if (ErrorAlertSwitchNumberOne === true && checkOne === true) {
-     console.log("promt === null || promt === \"\"");   
-    }
-    else if (ErrorAlertSwitchNumberOne === true && promt !== null && promt !== "") {
-     console.log("promt === null && promt === \"\"");   
-    }
-    else {
-     alert("Sorry, something went wrong. Check the console to troubleshoot."); 
-     console.error("ErrorAlertSwitchTwo");
-     var ErrorAlertSwitchTwo = true;
-    }
 }
 
 function cookies() {
